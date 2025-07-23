@@ -1,9 +1,5 @@
-<script lang="ts">
-	export let city: string;
-	export let country: string;
-	export let price: string;
-	export let duration: string;
-	export let image: string;
+<script >
+	let {city,country,price,duration,image} = $props();
 </script>
 
 <div

@@ -1,5 +1,5 @@
-<script lang="ts">
-	function handleSubmit(event: Event) {
+<script>
+	function handleSubmit(event) {
 		event.preventDefault();
 
 		alert('Subscribed!');

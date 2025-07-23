@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	const services = [
 		{
 			title: 'Calculated Weather',

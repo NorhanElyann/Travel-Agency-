@@ -1,11 +1,5 @@
-<script lang="ts">
-
-    interface FooterLink {
-		title: string;
-		links: string[];
-	}
-
-	const footerLinks: FooterLink[] = [
+<script>
+	const footerLinks = [
 		{
 			title: 'Company',
 			links: ['About', 'Careers', 'Mobile']
@@ -23,13 +17,13 @@
 
 <footer class="px-4 py-12 text-center">
 	<div
-		class="mx-auto flex max-w-7xl flex-wrap items-start justify-around gap-6 sm:flex-col md:flex-row md:justify-between sm:items-center sm:gap-6  md:gap-8"
+		class="flex flex-wrap justify-center gap-10"
 	>
 		<!-- Logo and Description -->
 		<div
-			class="flex flex-col text-left sm:mb-12 sm:max-w-[350px] sm:text-center md:max-w-[350px] md:text-center"
+			class="text-crnter flex flex-col sm:mb-12 sm:max-w-[350px] sm:text-left md:max-w-[350px] md:text-left"
 		>
-			<h4 class="mb-4 text-5xl font-medium text-black">Jadoo.</h4>
+			<h4 class="mb-4 text-5xl font-medium text-black sm:text-center">Jadoo.</h4>
 			<p class="text-sm leading-6 text-[#5E6282]">
 				Book your trip in minutes, get full<br /> control for much longer.
 			</p>
@@ -58,8 +52,10 @@
 		</div>
 
 		<!-- Social and App -->
-		<div class="text-left sm:mb-12 sm:max-w-[350px] sm:text-center md:max-w-[350px] md:text-center">
-			<div class="mb-4 flex gap-2.5 sm:justify-center md:justify-center">
+		<div
+			class="text-center sm:mb-12 sm:max-w-[350px] sm:text-center md:max-w-[350px] md:text-center"
+		>
+			<div class="mb-4 flex items-center justify-center gap-2.5">
 				<a
 					href="#"
 					class="flex h-[35px] w-[35px] items-center justify-center rounded-full bg-white text-[#181E4B] no-underline shadow-[0_2px_6px_rgba(0,0,0,0.1)] transition-all duration-300 hover:bg-gradient-to-r hover:from-[#fa7436] hover:to-[#fc964a] hover:text-white"

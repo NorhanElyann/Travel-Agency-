@@ -1,12 +1,7 @@
-<script lang="ts">
-	interface Step {
-		icon: string;
-		title: string;
-		description: string;
-		bg: string;
-	}
+<script>
+	
 
-	const steps: Step[] = [
+	const steps = [
 		{
 			icon: 'fa-object-group',
 			title: 'Choose Destination',
@@ -28,9 +23,10 @@
 	];
 </script>
 
-<section class="flex flex-col items-center justify-between gap-10 px-4 py-16 md:flex-row md:px-12">
+<section class="flex flex-col items-center justify-between gap-10 px-4 py-16 lg:flex-row lg:px-10">
+
 	<!-- Steps -->
-	<div class="flex-1 md:pr-10">
+	<div class="flex-1 ">
 		<h3 class="mb-6 text-sm font-bold text-[#666] uppercase">Easy and Fast</h3>
 		<h2 class="mb-8 font-serif text-[2.5rem] leading-snug font-bold text-[#181E4B]">
 			Book Your Next Trip<br />In 3 Easy Steps

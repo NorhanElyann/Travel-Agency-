@@ -1,10 +1,5 @@
-<script lang="ts">
-	interface Partner {
-		image: string;
-		alt: string;
-	}
-
-	const partners: Partner[] = [
+<script>
+	const partners = [
 		{ image: '/assets/imgs/axon.png', alt: 'Axon Airlines' },
 		{ image: '/assets/imgs/jetstar.png', alt: 'Jetstar' },
 		{ image: '/assets/imgs/expedia_logo.png', alt: 'Expedia' },
@@ -13,13 +8,11 @@
 	];
 </script>
 
-<section class="mx-auto px-8 py-16">
-	<div
-		class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-10 sm:justify-center md:justify-between"
-	>
+<section class="mx-auto px-8 py-16 sm:px-6 lg:px-8">
+	<div class="flex flex-wrap justify-center gap-10">
 		{#each partners as partner}
 			<div
-				class="flex h-[180px] w-[180px] items-center justify-center overflow-hidden rounded-xl transition-transform duration-300 ease-in hover:scale-110 hover:bg-white hover:shadow-[0_15px_40px_rgba(0,0,0,0.07)] sm:h-[150px] sm:w-[150px] md:h-[180px] md:w-[180px]"
+				class="flex h-[180px] w-[180px] items-center justify-center overflow-hidden rounded-xl transition-transform duration-300 ease-in hover:scale-110 hover:bg-white hover:shadow-[0_15px_40px_rgba(0,0,0,0.07)] sm:h-[150px] sm:w-[150px] md:h-[200px] md:w-[200px]"
 			>
 				<img
 					src={partner.image}
