@@ -3,25 +3,25 @@
 
 	const topDestinations = [
 		{
-			city: 'Rome',
+			alt: 'Rome',
 			country: 'Italy',
 			price: '$5.42k',
 			duration: '10 Days Trip',
-			image: '/assets/imgs/Rectangle 14.png'
+			src: '/assets/imgs/Rectangle 14.png'
 		},
 		{
-			city: 'London',
+			alt: 'London',
 			country: 'UK',
 			price: '$4.2k',
 			duration: '12 Days Trip',
-			image: '/assets/imgs/Rectangle 15.png'
+			src: '/assets/imgs/Rectangle 15.png'
 		},
 		{
-			city: 'Full Europe',
+			alt: 'Full Europe',
 			country: '',
 			price: '$15k',
 			duration: '28 Days Trip',
-			image: '/assets/imgs/Rectangle 16.png'
+			src: '/assets/imgs/Rectangle 16.png'
 		}
 	];
 </script>

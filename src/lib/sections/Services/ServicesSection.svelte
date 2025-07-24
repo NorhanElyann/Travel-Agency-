@@ -1,27 +1,27 @@
 <script>
 	const services = [
 		{
-			title: 'Calculated Weather',
+			alt: 'Calculated Weather',
 			description: 'Built Wicket longer admire do barton vanity itself do in it.',
-			icon: '/assets/imgs/satellite-dish.png',
+			src: '/assets/imgs/satellite-dish.png',
 			shapeClass: 'satellite'
 		},
 		{
-			title: 'Best Flights',
+			alt: 'Best Flights',
 			description: 'Engrossed listening. Park gate sell they west hard for the.',
-			icon: '/assets/imgs/plane.png',
+			src: '/assets/imgs/plane.png',
 			shapeClass: 'plane'
 		},
 		{
-			title: 'Local Events',
+			alt: 'Local Events',
 			description: 'Barton vanity itself do in it. Preferred to men it engrossed listening.',
-			icon: '/assets/imgs/mic.png',
+			src: '/assets/imgs/mic.png',
 			shapeClass: 'mic'
 		},
 		{
-			title: 'Customization',
+			alt: 'Customization',
 			description: 'We deliver outsourced aviation services for military customers.',
-			icon: '/assets/imgs/power-supply 1.png',
+			src: '/assets/imgs/power-supply 1.png',
 			shapeClass: 'power'
 		}
 	];
@@ -34,7 +34,7 @@
 	</h2>
 
 	<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-		{#each services as { title, description, icon, shapeClass }}
+		{#each services as { alt, description, src, shapeClass }}
 			<div
 				class="group relative overflow-hidden rounded-[15px] bg-white p-6 text-center transition-shadow hover:shadow-xl"
 			>
@@ -42,14 +42,14 @@
 				<!-- Icon -->
 				<div class="relative z-10 mx-auto mb-4 flex h-20 w-20 items-center justify-center bg-white">
 					<img
-						src={icon}
-						alt={title}
+						{src}
+						{alt}
 						class={`max-h-[60px] max-w-[60px] object-contain ${shapeClass === 'plane' ? 'max-h-[100px] max-w-[100px]' : ''}`}
 					/>
 				</div>
 
 				<!-- Title -->
-				<h3 class="mb-2 text-base font-semibold text-[#181E4B]">{title}</h3>
+				<h3 class="mb-2 text-base font-semibold text-[#181E4B]">{alt}</h3>
 				<p class="relative z-10 text-sm leading-relaxed text-[#5E6282]">{description}</p>
 			</div>
 		{/each}

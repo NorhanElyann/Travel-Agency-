@@ -13,12 +13,12 @@
 	<img
 		src="/assets/imgs/Group 42.png"
 		class="pointer-events-none absolute bottom-0 left-[10px] opacity-30 sm:h-[200px] sm:w-[150px]"
-		alt=""
+		alt="Decore"
 	/>
 	<img
 		src="/assets/imgs/Group 590.png"
 		class="pointer-events-none absolute top-0 right-0 opacity-30"
-		alt=""
+		alt="Decore"
 	/>
 
 	<!-- Title -->
